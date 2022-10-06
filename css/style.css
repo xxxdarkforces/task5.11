@@ -8,7 +8,7 @@ header {
     display: flex;
     align-items: top;
     justify-content: center;
-    background: url(../images/header_bg.jpg) no-repeat;
+    background: url(../images/header_bg.jpg) no-repeat 20% 0;
 }
 
 header h1 {
@@ -31,15 +31,17 @@ article {
 }
 
 article:nth-child(even) {
-    background: #868e96;
+    background: #eaeef1;
 }
 
-.new_news {
-    content: ' ';
-}
-
-.new_news:nth-child(-n+3) {
-    content: url(../images/new.png);
+article:nth-of-type(-n+2)::before {
+    content: " NEW";
+    color: #000;
+    background: #f00;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 12px;
+    position: absolute;
 }
 
 article a {
@@ -52,7 +54,8 @@ article a:hover {
 }
 
 article h2 {
-    font-size: 23px;
+
+    font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
 }
