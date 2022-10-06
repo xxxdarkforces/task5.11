@@ -30,6 +30,18 @@ article {
     border-bottom: 1px solid #808080;
 }
 
+article:nth-child(even) {
+    background: #868e96;
+}
+
+.new_news {
+    content: ' ';
+}
+
+.new_news:nth-child(-n+3) {
+    content: url(../images/new.png);
+}
+
 article a {
     color: #212529;
     text-decoration: none;
