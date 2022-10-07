@@ -34,14 +34,16 @@ article:nth-child(even) {
     background: #eaeef1;
 }
 
-article:nth-of-type(-n+2)::before {
-    content: " NEW";
-    color: #000;
+article:nth-of-type(-n+2) h2::before {
+    content: " NEW ";
+    color: #000016;
     background: #f00;
     border-radius: 5px;
     padding: 2px;
+    margin: 0 7px 0 0;
     font-size: 12px;
-    position: absolute;
+    vertical-align: middle;
+
 }
 
 article a {
